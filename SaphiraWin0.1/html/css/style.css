@@ -1,0 +1,84 @@
+@import url("input.css");
+@import url("root.css");
+@import url("div.css");
+
+@import url("buttons.css");
+
+body {
+  background: var(--bg);
+
+  color: var(--txt);
+  text-shadow: 0 0 20px var(--txt), 0 0 10px var(--txt);
+  font-family: var(--ff), sans-serif;
+
+  padding: 0;
+  margin: 0;
+
+  overflow: visible;
+  transition: all var(--transition) ease-in-out;
+}
+
+div {
+  background: transparent;
+  border: none;
+
+  z-index: 0;
+}
+
+.empty {
+  background: transparent;
+  border: transparent;
+  color: transparent;
+}
+
+.overflow-x {
+  overflow-x: auto;
+}
+
+.overflow-y {
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.logo {
+  user-select: none;
+  cursor: pointer;
+
+  transition: all var(--transition) ease-in-out;
+
+  font-weight: 900;
+  font-family: var(--ff);
+  text-decoration: none;
+  color: #fff;
+  zoom: 1.4;
+
+  &:hover {
+    color: var(--c1);
+    text-shadow: 0 0 var(--shadow2) var(--c1);
+  }
+}
+
+.comment {
+  color: var(--c6);
+}
+
+.unselectable {
+  user-select: none;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.long {
+  height: 700px;
+}
+
+.invisible {
+  display: none;
+}

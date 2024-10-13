@@ -1,0 +1,15 @@
+.inp {
+  color: var(--c2);
+
+  border: none;
+  outline: none;
+
+  border-radius: 0;
+
+  background: transparent;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.01);
+    color: var(--c1);
+  }
+}

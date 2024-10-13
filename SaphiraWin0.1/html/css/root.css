@@ -1,0 +1,20 @@
+:root {
+  --bg: #000;
+  --txt: #fff;
+
+  --ff: "Consolas";
+
+  --shadow: 36px;
+  --shadow2: 25px;
+  --shadow3: 16px;
+  --shadow4: 8px;
+
+  --c1: #0f0;
+  --c2: #ff0; /* Fix the typo here */
+  --c3: #f00;
+  --c4: rgb(194, 0, 194);
+  --c5: rgb(255, 145, 0);
+  --c6: #888;
+
+  --transition: 0.18s;
+}

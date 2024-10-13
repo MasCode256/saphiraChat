@@ -1,0 +1,101 @@
+.btn {
+  border: none;
+  border-radius: 0;
+
+  background: transparent;
+
+  font-family: var(--ff), sans-serif;
+  text-shadow: 0 0 var(--shadow) var(--txt), 0 0 var(--shadow2) var(--txt),
+    0 0 var(--shadow3) var(--txt);
+  color: var(--txt);
+  text-align: center;
+  font-weight: 600;
+  vertical-align: middle;
+
+  padding: 0.2vw;
+
+  zoom: 1.1;
+
+  transition: all 0.19s ease-in-out;
+  cursor: pointer;
+
+  margin: 0.2vw;
+
+  &:hover {
+    background: var(--txt);
+    box-shadow: 0 0 var(--shadow3) var(--txt), 0 0 var(--shadow4) var(--txt);
+
+    color: var(--bg);
+    text-shadow: 0 0 var(--shadow4) var(--bg);
+  }
+
+  &.c {
+    color: var(--c1);
+    text-shadow: 0 0 var(--shadow) var(--c1), 0 0 var(--shadow2) var(--c1),
+      0 0 var(--shadow3) var(--c1);
+
+    &:hover {
+      background: var(--c1);
+      color: var(--bg);
+      text-shadow: 0 0 var(--shadow4) var(--bg);
+
+      box-shadow: 0 0 var(--shadow3) var(--c1), 0 0 var(--shadow4) var(--c1);
+    }
+  }
+
+  &.c2 {
+    color: var(--c2);
+    text-shadow: 0 0 var(--shadow) var(--c2), 0 0 var(--shadow2) var(--c2),
+      0 0 var(--shadow3) var(--c2);
+
+    &:hover {
+      background: var(--c2);
+      color: var(--bg);
+      text-shadow: 0 0 var(--shadow4) var(--bg);
+
+      box-shadow: 0 0 var(--shadow3) var(--c2), 0 0 var(--shadow4) var(--c2);
+    }
+  }
+
+  &.c3 {
+    color: var(--c3);
+    text-shadow: 0 0 var(--shadow) var(--c3), 0 0 var(--shadow2) var(--c3),
+      0 0 var(--shadow3) var(--c3);
+
+    &:hover {
+      background: var(--c3);
+      color: var(--bg);
+      text-shadow: 0 0 var(--shadow4) var(--bg);
+
+      box-shadow: 0 0 var(--shadow3) var(--c3), 0 0 var(--shadow4) var(--c3);
+    }
+  }
+
+  &.c4 {
+    color: var(--c4);
+    text-shadow: 0 0 var(--shadow) var(--c4), 0 0 var(--shadow2) var(--c4),
+      0 0 var(--shadow3) var(--c4);
+
+    &:hover {
+      background: var(--c4);
+      color: var(--bg);
+      text-shadow: 0 0 var(--shadow4) var(--bg);
+
+      box-shadow: 0 0 var(--shadow3) var(--c4), 0 0 var(--shadow4) var(--c4);
+    }
+  }
+
+  &.c5 {
+    color: var(--c5);
+    text-shadow: 0 0 var(--shadow) var(--c5), 0 0 var(--shadow2) var(--c5),
+      0 0 var(--shadow3) var(--c5);
+
+    &:hover {
+      background: var(--c5);
+      color: var(--bg);
+      text-shadow: 0 0 var(--shadow4) var(--bg);
+
+      box-shadow: 0 0 var(--shadow3) var(--c5), 0 0 var(--shadow4) var(--c5);
+    }
+  }
+}

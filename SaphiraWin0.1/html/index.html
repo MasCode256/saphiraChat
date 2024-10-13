@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saphira Chat v.0.1</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="js/functions.js"></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <a class="logo" href="index.html">Saphira Chat</a>
+      <button class="empty"></button>
+      <h6 id="output">
+        SC-0 by Maskot (v.0.1, protocol QK-0, made in Russia), waiting for
+        command...
+      </h6>
+      <button class="empty"></button>
+      <!--<button class="btn c3">[Мессенджер]</button>
+      <button class="btn c4">[Консоль]</button>-->
+    </div>
+    <button class="vh empty"></button>
+    <div class="flex overflow-y">
+      <div class="left overflow-y">
+        <button class="empty"></button>
+        <p></p>
+        <button class="btn c">[Добавить контакт]</button>
+        <p></p>
+        <button class="empty"></button>
+        <div id="contacts"></div>
+        <p class="comment" id="cc">// Ожидание локального сервера...</p>
+        <button class="empty long"></button>
+      </div>
+      <div class="content overflow-y">
+        <div class="flex" style="width: 100%; height: 10vh; padding-left: 4%">
+          <h5 id="title">Контакт не выбран</h5>
+          <button class="empty"></button>
+          <button class="btn" onclick="switch_ui('chat')">[Чат]</button>
+          <button
+            class="btn c"
+            onclick="switch_ui('settings'); load_settings(current)"
+          >
+            [Настройки]
+          </button>
+          <button class="btn c3" onclick="delete_contact(current)">
+            [Удалить контакт]
+          </button>
+        </div>
+        <div id="chat">
+          <h1>Chat</h1>
+        </div>
+        <div id="settings" class="invisible">
+          <h3>Настройки контакта:</h3>
+          <div class="flex">
+            <p>[Имя] $></p>
+            <input type="text" class="inp" id="name" />
+          </div>
+          <div class="flex">
+            <p>[IP] $></p>
+            <input type="text" class="inp" id="ip" />
+          </div>
+          <div class="flex">
+            <p>[Отображаемый цвет] $></p>
+            <input type="text" class="inp" id="color" />
+          </div>
+          <div class="flex">
+            <p>[Ключ шифрования и дешифрования] $</p>
+            <input type="text" class="inp" id="key" />
+          </div>
+          <button class="btn c5" onclick="confirm(current)">
+            [Применить изменения]
+          </button>
+        </div>
+
+        <button class="empty long"></button>
+      </div>
+    </div>
+  </body>
+</html>
