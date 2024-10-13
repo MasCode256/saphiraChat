@@ -1,0 +1,35 @@
+.top {
+  width: 100%;
+  height: 12.5vh;
+
+  padding-left: 1vw;
+  padding-right: 1vw;
+
+  position: fixed;
+
+  text-align: left;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.vh {
+  height: 14vh;
+}
+
+.left {
+  width: 14%;
+  height: 89vh;
+
+  background: transparent;
+
+  padding-left: 1%;
+  overflow-y: hidden;
+}
+
+.flex {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
