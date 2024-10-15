@@ -1,8 +1,7 @@
 {
-    "name": "my-app",
-    "version": "1.0.0",
-    "scripts": {
-      "start": "electron main.js"
-    }
+  "name": "SaphiraChatForWindows",
+  "version": "0.1",
+  "scripts": {
+    "start": "electron main.js"
   }
-  
+}

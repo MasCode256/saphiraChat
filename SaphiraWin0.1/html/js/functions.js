@@ -133,3 +133,50 @@ async function confirm(index) {
 
   location.reload();
 }
+
+async function new_contact() {
+  await fetchTextFromUrl("http://localhost:1110?new=contact");
+  await location.reload();
+}
+
+function stringToHex(str) {
+  let hexString = "";
+  for (let i = 0; i < str.length; i++) {
+    const hex = str.charCodeAt(i).toString(16);
+    hexString += hex.padStart(2, "0"); // Обеспечивает, чтобы каждый байт был представлен двумя символами
+  }
+  return hexString;
+}
+
+function hexToString(hex) {
+  let str = "";
+  for (let i = 0; i < hex.length; i += 2) {
+    const code = parseInt(hex.substr(i, 2), 16);
+    str += String.fromCharCode(code);
+  }
+  return str;
+}
+
+async function post(url, data) {
+  fetch(url, {
+    method: "POST",
+    "Content-Type": "text/plain",
+    body: data,
+  })
+    .then((response) => response.text()) // Обрабатываем ответ как текст
+    .then((result) => {
+      console.log("Успех:", result);
+      return result;
+    })
+    .catch((error) => {
+      console.error("Ошибка:", error);
+      return "";
+    });
+}
+
+async function send_msg(index) {
+  const output = document.getElementById("output");
+  const input = document.getElementById("msg");
+
+  post("http://localhost:1112/?send=" + current, stringToHex(input.value));
+}

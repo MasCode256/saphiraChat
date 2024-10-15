@@ -1,5 +1,8 @@
 .inp {
   color: var(--c2);
+  font-family: var(--ff);
+
+  width: 70%;
 
   border: none;
   outline: none;

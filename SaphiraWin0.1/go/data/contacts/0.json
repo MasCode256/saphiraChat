@@ -1,6 +1,6 @@
 {
-  "name": "Вы",
+  "color": "#ffffff",
   "ip": "127.0.0.1",
-  "color": "#ffff00",
-  "key": "mykey1234"
+  "key": "mykey1234",
+  "name": "Вы"
 }

@@ -82,3 +82,10 @@ div {
 .invisible {
   display: none;
 }
+
+.small {
+  zoom: 0.5;
+
+  position: relative;
+  bottom: 2vh;
+}

@@ -69,4 +69,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       ")" +
       "</button>";
   }
+
+  switch_contact(0);
 });
